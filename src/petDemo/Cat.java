@@ -7,9 +7,9 @@ public class Cat extends Pet {
 	}
 
 	public String speak() {
-		
 		return "Meowww!";
 	}
+	
 	public void useLitterBox() {
 		System.out.println("Cat is using the litterbox.");
 	}

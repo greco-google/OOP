@@ -2,9 +2,9 @@ package petDemo;
 
 public abstract class Pet {
 
-	private String name;
-	private String type;
-	private int age;
+	protected String name;
+	protected String type;
+	protected int age;
 	
 	
 	public Pet(String name, String type, int age) {

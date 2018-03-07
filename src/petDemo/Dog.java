@@ -9,7 +9,10 @@ public class Dog extends Pet {
 	public String speak() {
 		return "Woof!";
 	}
+	
 	public void walk() {
-		System.out.println("The dog is out for a walk.");
+		System.out.println(this.name + "is walking...");
+		//System.out.println(this.getName() + "is walking...");
+		//this is when the name variable is private instead of protected
 	}
 }
