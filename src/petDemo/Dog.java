@@ -2,36 +2,14 @@ package petDemo;
 
 public class Dog extends Pet {
 
-	private String name;
-	private String type;
-	private int age;
-
-	
-	public String getName() {
-		return name;
+	public Dog (String name, String type, int age) {
+		super (name, type, age);
 	}
 
-	public String getType() {
-		return type;
+	public String speak() {
+		return "Woof!";
 	}
-	public int getAge() {
-		return age;
+	public void walk() {
+		System.out.println("The dog is out for a walk.");
 	}
-	
-	
-	public Dog(String name, String type, int age) {
-		super();
-		this.name = name;
-		this.type = type;
-		this.age = age;
-	}
-	
-	
-	public String toString() {
-		return "Dog [name=" + name + ", type=" + type + ", age=" + age + "]";
-	}
-
-
-
-	
 }
