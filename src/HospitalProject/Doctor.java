@@ -1,18 +1,10 @@
 package HospitalProject;
 
-public class Doctor {
+public class Doctor extends Employee {
 
-	private int empNumber;
-	private String empName;
 	private String speciality;
 	
 
-	public int getEmpNumber() {
-		return empNumber;
-	}
-	public String getEmpName() {
-		return empName;
-	}
 	public String getSpeciality() {
 		return speciality;
 	}
