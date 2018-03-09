@@ -2,12 +2,12 @@ package HospitalProject;
 
 public class Nurse {
 
-	private String empNumber;
+	private int empNumber;
 	private String empName;
 	private int numPatients;
 	
 	
-	public String getEmpNumber() {
+	public int getEmpNumber() {
 		return empNumber;
 	}
 	public String getEmpName() {
@@ -18,7 +18,7 @@ public class Nurse {
 	}
 	
 	
-	public Nurse(String empNumber, String empName, int numPatients) {
+	public Nurse(int empNumber, String empName, int numPatients) {
 		super();
 		this.empNumber = empNumber;
 		this.empName = empName;
