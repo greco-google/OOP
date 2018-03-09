@@ -1,6 +1,6 @@
 package HospitalProject;
 
-public class Surgeon extends Doctor {
+public class Surgeon extends Doctor implements MedicalDuties {
 
 	private boolean isOperating;
 	
@@ -21,6 +21,12 @@ public class Surgeon extends Doctor {
 	}
 	
 	
+	@Override
+	public void careForPatient(Patient patient) {
+		patient.healthlevel += 20;	
+	}
+
+		
 	@Override
 	public String toString() {
 		return "Surgeon [isOperating=" + isOperating + ", empNumber=" + empNumber + ", empName=" + empName + "]";

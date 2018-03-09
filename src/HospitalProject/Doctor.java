@@ -1,6 +1,6 @@
 package HospitalProject;
 
-public class Doctor extends Employee {
+public class Doctor extends Employee implements MedicalDuties {
 
 	private String speciality;
 	
@@ -26,12 +26,20 @@ public class Doctor extends Employee {
 	
 	
 	@Override
+	public void careForPatient(Patient patient) {
+		patient.healthlevel += 10;
+		
+	}
+
+	@Override
+	public void drawBloodFromPatient(Patient patient) {
+		patient.bloodLevel -=5;
+		
+	}
+	
+	
+	@Override
 	public String toString() {
 		return "Doctor [empNumber=" + empNumber + ", empName=" + empName + ", speciality=" + speciality + "]";
 	}
-
-
-
-	
-	
 }

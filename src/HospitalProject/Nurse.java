@@ -1,6 +1,6 @@
 package HospitalProject;
 
-public class Nurse extends Employee {
+public class Nurse extends Employee implements MedicalDuties {
 
 	private int numPatients;
 	
@@ -22,6 +22,17 @@ public class Nurse extends Employee {
 	@Override
 	public String paySalary() {
 		return "$50,000";
+	}
+	
+	
+	@Override
+	public void careForPatient(Patient patient) {
+		patient.healthlevel += 10;	
+	}
+
+	@Override
+	public void drawBloodFromPatient(Patient patient) {
+		patient.bloodLevel -=5;	
 	}
 	
 	
