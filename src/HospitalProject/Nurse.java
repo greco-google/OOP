@@ -11,6 +11,7 @@ public class Nurse extends Employee {
 	
 	
 	public Nurse(int empNumber, String empName, int numPatients) {
+		// Look at this if there are errors!!!!
 		super();
 		this.empNumber = empNumber;
 		this.empName = empName;
@@ -18,11 +19,19 @@ public class Nurse extends Employee {
 	}
 	
 	
+	@Override
+	public String paySalary() {
+		return "$50,000";
+	}
+	
 	
 	@Override
 	public String toString() {
 		return "Nurse [empNumber=" + empNumber + ", empName=" + empName + ", numPatients=" + numPatients + "]";
 	}
+
+
+
 	
 	
 }

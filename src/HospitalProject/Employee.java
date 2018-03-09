@@ -1,13 +1,10 @@
 package HospitalProject;
 
-public class Employee {
+public abstract class Employee {
 
 	protected int empNumber;
 	protected String empName;
 
-	public Employee() {
-		super();
-	}
 
 	public int getEmpNumber() {
 		return empNumber;
@@ -16,5 +13,7 @@ public class Employee {
 	public String getEmpName() {
 		return empName;
 	}
+	
+	public abstract String paySalary();
 
 }
