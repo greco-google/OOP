@@ -24,4 +24,10 @@ public class Patient {
 		this.healthlevel = healthlevel;
 		this.bloodLevel = bloodLevel;
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Patient [name=" + name + ", healthlevel=" + healthlevel + ", bloodLevel=" + bloodLevel + "]";
+	}
 }

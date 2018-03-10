@@ -29,7 +29,8 @@ public class Surgeon extends Doctor implements MedicalDuties {
 		
 	@Override
 	public String toString() {
-		return "Surgeon [isOperating=" + isOperating + ", empNumber=" + empNumber + ", empName=" + empName + "]";
+		//return "Surgeon [isOperating=" + isOperating + ", empNumber=" + empNumber + ", empName=" + empName + "]";
+		return "Surgeon [empNumber=" + empNumber + ", empName=" + empName + ", isOperating=" + isOperating + "]";
 	}
 	
 }
