@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Hospital {
 
+	//Lowest level
 	private List <Employee> employees = new ArrayList<>();
 	
 	public void addEmployee(Employee employee) {

@@ -13,7 +13,7 @@ public class HospitalApp {
 		Hospital myHospital = new Hospital();
 		Patient Zack = new Patient("Zack", 70, 100);
 		
-		Doctor Phil = new Doctor(1111, "Phill", "General");
+		Doctor Phil = new Doctor(1111, "Phil", "General");
 		myHospital.addEmployee(Phil);
 		
 		Surgeon Steve = new Surgeon(1112, "Steve", "General", true);
@@ -21,6 +21,9 @@ public class HospitalApp {
 		
 		Janitor Rosie = new Janitor(1113, "Rosie", true);
 		myHospital.addEmployee(Rosie);
+		
+		MedicalDispacher leslie = new MedicalDispacher(3333, "Leslie", "Dispacher");
+		leslie.careForPatient(Zack);
 		
 		System.out.println("Before care stats: " + Zack);
 		Phil.careForPatient(Zack);
