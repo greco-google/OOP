@@ -37,9 +37,9 @@ public abstract class Employee implements Comparable<Employee> {
 	public abstract String paySalary();
 
 	@Override
-	public int compareTo(Employee o) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Employee other) {
+		
+		return this.getEmpName().compareTo(other.getEmpName());
 	}
 
 }

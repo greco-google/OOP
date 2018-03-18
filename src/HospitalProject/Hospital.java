@@ -1,6 +1,7 @@
 package HospitalProject;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Hospital {
@@ -30,6 +31,11 @@ public class Hospital {
 		for(Employee employee: employees) {
 			System.out.println(employee.getEmpName() + " " + employee.getEmpNumber());
 		}
+	}
+	
+	public ArrayList<Employee> sortAscending() {
+		Collections.sort(employees);
+		return (ArrayList<Employee>)employees;
 	}
 	
 	
