@@ -26,5 +26,11 @@ public class Hospital {
 		}
 	}
 	
+	public void showAllEmployees() {
+		for(Employee employee: employees) {
+			System.out.println(employee.getEmpName() + " " + employee.getEmpNumber());
+		}
+	}
+	
 	
 }

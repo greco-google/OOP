@@ -16,10 +16,10 @@ public class HospitalApp {
 		Doctor Phil = new Doctor(1111, "Phil", "General");
 		myHospital.addEmployee(Phil);
 		
-		Surgeon Steve = new Surgeon(1112, "Steve", "General", true);
+		Surgeon Steve = new Surgeon(3333, "Steve", "General", true);
 		myHospital.addEmployee(Steve);
 		
-		Janitor Rosie = new Janitor(1113, "Rosie", true);
+		Janitor Rosie = new Janitor(2222, "Rosie", true);
 		myHospital.addEmployee(Rosie);
 		
 //		//for v1.1
@@ -29,7 +29,7 @@ public class HospitalApp {
 //		leslie.careForPatient(Zack);
 		
 		//for v1.2
-		MedicalDispacher leslie = new MedicalDispacher(3333, "Leslie", "Dispach", false);
+		MedicalDispacher leslie = new MedicalDispacher(4444, "Leslie", "Dispach", false);
 		myHospital.addEmployee(leslie);
 		leslie.drawBloodFromPatient(Zack);
 		leslie.careForPatient(Zack);
@@ -44,6 +44,9 @@ public class HospitalApp {
 		
 		System.out.println("\nHere are the Salary Rates: ");
 		myHospital.showAllSalaryRates();
+		
+		System.out.println("\nUnsorted display of our employees:");
+		myHospital.showAllEmployees();
 		
 
 	}
