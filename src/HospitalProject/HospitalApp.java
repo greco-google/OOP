@@ -22,7 +22,16 @@ public class HospitalApp {
 		Janitor Rosie = new Janitor(1113, "Rosie", true);
 		myHospital.addEmployee(Rosie);
 		
-		MedicalDispacher leslie = new MedicalDispacher(3333, "Leslie", "Dispacher");
+//		//for v1.1
+//		MedicalDispacher leslie = new MedicalDispacher(3333, "Leslie", "Dispach");
+//		myHospital.addEmployee(leslie);
+//		leslie.drawBloodFromPatient(Zack);
+//		leslie.careForPatient(Zack);
+		
+		//for v1.2
+		MedicalDispacher leslie = new MedicalDispacher(3333, "Leslie", "Dispach", false);
+		myHospital.addEmployee(leslie);
+		leslie.drawBloodFromPatient(Zack);
 		leslie.careForPatient(Zack);
 		
 		System.out.println("Before care stats: " + Zack);
