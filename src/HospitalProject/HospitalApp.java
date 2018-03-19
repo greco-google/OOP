@@ -48,6 +48,10 @@ public class HospitalApp {
 		System.out.println("\nUnsorted display of our employees:");
 		myHospital.showAllEmployees();
 		
+		System.out.println("\nSorted display of our employees:");
+		myHospital.sortAscending();
+		myHospital.showAllEmployees();
+		
 
 	}
 
